@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Mimetype extends \Respect\Annotation\Rules
 {
-    public function __construct(string $mimetype, ?finfo $fileInfo = NULL)
+    public function __construct(string $mimetype, ?\finfo $fileInfo = NULL)
     {
         $this->validator = new \Respect\Validation\Rules\Mimetype($mimetype, $fileInfo);
     }

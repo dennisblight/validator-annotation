@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class KeySet extends \Respect\Annotation\Rules
 {
-    public function __construct(Respect\Validation\Validatable ...$validatables)
+    public function __construct(\Respect\Validation\Validatable ...$validatables)
     {
         $this->validator = new \Respect\Validation\Rules\KeySet(...$validatables);
     }

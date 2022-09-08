@@ -42,6 +42,10 @@ function classIterator() {
                         $signature .= '?';
                     }
 
+                    if(!$type->isBuiltin()) {
+                        $signature .= '\\';
+                    }
+
                     if($typeName) {
                         $signature .= $typeName;
                     }

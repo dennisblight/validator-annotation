@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class When extends \Respect\Annotation\Rules
 {
-    public function __construct(Respect\Validation\Validatable $when, Respect\Validation\Validatable $then, ?Respect\Validation\Validatable $else = NULL)
+    public function __construct(\Respect\Validation\Validatable $when, \Respect\Validation\Validatable $then, ?\Respect\Validation\Validatable $else = NULL)
     {
         $this->validator = new \Respect\Validation\Rules\When($when, $then, $else);
     }

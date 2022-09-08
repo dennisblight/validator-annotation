@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Image extends \Respect\Annotation\Rules
 {
-    public function __construct(?finfo $fileInfo = NULL)
+    public function __construct(?\finfo $fileInfo = NULL)
     {
         $this->validator = new \Respect\Validation\Rules\Image($fileInfo);
     }

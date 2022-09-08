@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Nullable extends \Respect\Annotation\Rules
 {
-    public function __construct(Respect\Validation\Validatable $validatable)
+    public function __construct(\Respect\Validation\Validatable $validatable)
     {
         $this->validator = new \Respect\Validation\Rules\Nullable($validatable);
     }

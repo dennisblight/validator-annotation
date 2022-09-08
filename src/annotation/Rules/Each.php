@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Each extends \Respect\Annotation\Rules
 {
-    public function __construct(Respect\Validation\Validatable $rule)
+    public function __construct(\Respect\Validation\Validatable $rule)
     {
         $this->validator = new \Respect\Validation\Rules\Each($rule);
     }

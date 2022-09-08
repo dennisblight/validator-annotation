@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Sf extends \Respect\Annotation\Rules
 {
-    public function __construct(Symfony\Component\Validator\Constraint $constraint, ?Symfony\Component\Validator\Validator\ValidatorInterface $validator = NULL)
+    public function __construct(\Symfony\Component\Validator\Constraint $constraint, ?\Symfony\Component\Validator\Validator\ValidatorInterface $validator = NULL)
     {
         $this->validator = new \Respect\Validation\Rules\Sf($constraint, $validator);
     }

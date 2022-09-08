@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Email extends \Respect\Annotation\Rules
 {
-    public function __construct(?Egulias\EmailValidator\EmailValidator $validator = NULL)
+    public function __construct(?\Egulias\EmailValidator\EmailValidator $validator = NULL)
     {
         $this->validator = new \Respect\Validation\Rules\Email($validator);
     }

@@ -15,7 +15,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
  */
 class Call extends \Respect\Annotation\Rules
 {
-    public function __construct(callable $callable, Respect\Validation\Validatable $rule)
+    public function __construct(callable $callable, \Respect\Validation\Validatable $rule)
     {
         $this->validator = new \Respect\Validation\Rules\Call($callable, $rule);
     }
