@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Respect\\Annotation\\Rules": "src/rules"
+            "Respect\\Annotation": "src/annotation"
         }
     }
 }

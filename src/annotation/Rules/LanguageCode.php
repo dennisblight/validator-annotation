@@ -13,10 +13,10 @@ use Doctrine\Common\Annotations\Annotation\Target;
  * @NamedArgumentConstructor
  * @Target("PROPERTY")
  */
-class {className} extends \Respect\Annotation\Rules
+class LanguageCode extends \Respect\Annotation\Rules
 {
-    public function __construct({parameters})
+    public function __construct(string $set = 'alpha-2')
     {
-        $this->validator = new {validatorClass}({invokeParameters});
+        $this->validator = new \Respect\Validation\Rules\LanguageCode($set);
     }
 }

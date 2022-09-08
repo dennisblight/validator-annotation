@@ -85,12 +85,12 @@ foreach(classIterator() as $item) {
         '{className}',
     ], array_values($item), $classTemplate);
 
-    if(!file_exists('./src/rules'))
+    if(!file_exists('./src/annotation/Rules'))
     {
-        mkdir('./src/rules', 0777, true);
+        mkdir('./src/annotation/Rules', 0777, true);
     }
 
-    if(file_exists($classFile = './src/rules/' . $item['className'] . '.php'))
+    if(file_exists($classFile = './src/annotation/Rules/' . $item['className'] . '.php'))
     {
         unlink($classFile);
     }

@@ -13,10 +13,10 @@ use Doctrine\Common\Annotations\Annotation\Target;
  * @NamedArgumentConstructor
  * @Target("PROPERTY")
  */
-class {className} extends \Respect\Annotation\Rules
+class KeyValue extends \Respect\Annotation\Rules
 {
-    public function __construct({parameters})
+    public function __construct($comparedKey, string $ruleName, $baseKey)
     {
-        $this->validator = new {validatorClass}({invokeParameters});
+        $this->validator = new \Respect\Validation\Rules\KeyValue($comparedKey, $ruleName, $baseKey);
     }
 }
