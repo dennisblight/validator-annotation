@@ -1,13 +1,14 @@
 {
     "name": "dennisblight/validator-annotation",
+    "version": "v1.0",
     "description": "Validator annotation for Respect/Validation",
     "type": "library",
     "license": "MIT",
-    "version": "v1.0",
     "authors": [
         {
             "name": "Dennis Arfan",
-            "email": "dennisarfan@gmail.com"
+            "email": "dennisarfan@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
