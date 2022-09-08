@@ -10,7 +10,6 @@
             "email": "dennisarfan@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "respect/validation": "^2.2",
         "doctrine/annotations": "^1.13"
